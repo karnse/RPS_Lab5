@@ -10,7 +10,7 @@ contract RPS is CommitReveal, TimeUnit {
     uint public numPlayer = 0;
     uint public numReveal = 0;
     uint public reward = 0;
-    mapping (address => uint) public player_choice; // 0 - Rock, 1 - Paper , 2 - Scissors
+    mapping (address => uint) public player_choice; // 0 - Rock, 1 - Paper , 2 - Scissors , 3 - Lizard , 4 - Spock
     mapping(address => bool) public player_not_played;
     mapping(address => bool) public player_not_revaled;
     address[] public players;
